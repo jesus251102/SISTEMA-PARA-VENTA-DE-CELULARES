@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Ubuntu:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/frontend/css/index.css">
+    <link rel="stylesheet" href="/frontend/css/reportes.css">
+    <link rel="stylesheet" href="/frontend/css/clientes.css">
+    <title>Reportes</title>
+</head>
+
+<body>
+    <section class="home">
+        <div class="text subtitulo">Reportes y Estadísticas</div>
+
+        <div id="reportes">
+            <div>
+                <h3>Ganancias Diarias</h3>
+                <canvas id="gananciasChart"></canvas>
+            </div>
+
+            <div>
+                <h3>Reparaciones por Marca</h3>
+                <canvas id="marcasChart"></canvas>
+            </div>
+
+            <div>
+                <h3>Costo Promedio de Reparación</h3>
+                <p id="costoPromedio"></p>
+            </div>
+
+            <div>
+                <h3>Ingresos Mensuales</h3>
+                <canvas id="ingresosChart"></canvas>
+
+            </div>
+
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/frontend/js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/frontend/js/reportes.js"></script>
+    <script src="/frontend/js/reparacion.js"></script>
+
+
+</body>
+
+</html>

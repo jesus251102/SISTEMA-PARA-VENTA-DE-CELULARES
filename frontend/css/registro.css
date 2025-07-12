@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #0C2C40;
+    color: #D0D5D9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    background: #0A2331;
+    border-bottom: 2px solid #D0D5D9;
+}
+
+header h1 {
+    font-size: 2.4rem;
+    color: #D0D5D9;
+    text-transform: uppercase;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 20px;
+}
+
+section {
+    width: 50%;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    /* backdrop-filter: blur(5px); */
+}
+
+section h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.container-cliente,
+.container-reparacion {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+label {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+input,
+select {
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #D0D5D9;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+select option {
+    background: #0C2C40;
+    color: #ffffff;
+}
+
+input::placeholder {
+    color: #D0D5D9;
+    opacity: 0.7;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border: 1px solid #F5A623;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0px 0px 8px rgba(245, 166, 35, 0.6);
+}
+
+button {
+    background: #F5A623;
+    color: #0C2C40;
+    font-size: 1.1rem;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #ffb84d;
+}
+
+/* 🌟 Diseño Responsive */
+@media (max-width: 768px) {
+    section {
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+}

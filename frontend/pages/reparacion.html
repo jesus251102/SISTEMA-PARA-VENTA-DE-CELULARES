@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Ubuntu:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/frontend/css/index.css">
+    <link rel="stylesheet" href="/frontend/css/reparacion.css">
+    <title>Registro | Reparación</title>
+</head>
+
+<body>
+    <section class="home">
+        <div class="text subtitulo">Registro de Reparaciones</div>
+
+        <form class="formReparacion">
+            <div class="container-reparacion">
+                <div class="subContainer">
+                    <label for="dniCliente">Dni Cliente</label>
+                    <input type="text" id="dniCliente" name="dniCliente" required>
+                </div>
+
+                <div class="subContainer">
+                    <label for="reparacion">Reparación</label>
+                    <input type="text" id="reparacion" name="reparacion" required>
+                </div>
+
+                <div class="subContainer">
+                    <label for="marca">Marca</label>
+                    <select id="marca" name="marca" required>
+                        <option value="" selected disabled>Seleccionar Marca</option>
+                        <option value="Samsung">Samsung</option>
+                        <option value="Huawei">Huawei</option>
+                        <option value="Honor">Honor</option>
+                        <option value="Redmi">Redmi</option>
+                        <option value="Poco">Poco</option>
+                        <option value="iPhone">iPhone</option>
+                        <option value="Motorola">Motorola</option>
+                        <option value="LG">LG</option>
+                        <option value="Realme">Realme</option>
+                        <option value="Oppo">Oppo</option>
+                        <option value="Zte">Zte</option>
+                    </select>
+                </div>
+
+                <div class="subContainer">
+                    <label for="modelo">Modelo</label>
+                    <input type="text" id="modelo" required>
+                </div>
+
+                <div class="subContainer">
+                    <label for="precio">Precio</label>
+                    <input type="number" id="precio" required>
+                </div>
+
+                <div class="subContainer">
+                    <label for="costo">Costo</label>
+                    <input type="number" id="costo" required>
+                </div>
+
+                <div class="subContainer">
+                    <button class="registrar" type="submit">Registrar Reparación</button>
+                </div>
+
+            </div>
+        </form>
+
+        <div class="buscarCliente">
+            <input type="text" placeholder="DNI Cliente" maxlength="8">
+            <button class="buscar">Buscar Reparación</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>DNI Cliente</th>
+                    <th>Reparación</th>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>Precio</th>
+                    <th>Costo</th>
+                    <th>Ganancia</th>
+                    <th>Fecha Reparación</th>
+                </tr>
+            </thead>
+            <tbody id="tablaBody">
+            </tbody>
+
+            <tr id="filaMostrarMas">
+                <td colspan="8" class="text-center">
+                    <button id="mostrarMasBtn">Mostrar más</button>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/frontend/js/index.js"></script>
+    <script src="/frontend/js/reparacion.js"></script>
+    <script src="/frontend/js/reportes.js"></script>
+    <!-- <script src="/frontend/js/ventas.js "></script> -->
+</body>
+
+</html>
